@@ -17,6 +17,8 @@
         // }
         // xttp.open("get","https://60db3f05801dcb0017290ffe.mockapi.io/api/products",true);
         // xttp.send();
+
+        // Dostavljanje podataka u JSON formatu(proizvodi i kategorije)
         const url1 = 'https://60db3f05801dcb0017290ffe.mockapi.io/api/products';
         const url2 = 'https://60db3f05801dcb0017290ffe.mockapi.io/api/kategorije';
         const promise1 = fetch(url1)
@@ -251,7 +253,6 @@
 
         function filtrirajPodatke(unos){
             let filtrirani = [];
-            console.log(unos);
             proizvodi.forEach(proizvod => {
                 unos = unos.toLowerCase();
                 naziv = proizvod.naziv.toLowerCase();
